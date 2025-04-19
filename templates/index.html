@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <p>1 se 100 tak ek number guess karo!</p>
+        <form id="guessForm">
+            <input type="number" id="guessInput" min="1" max="100" required>
+            <button type="submit">Submit your no. </button>
+        </form>
+        <p id="message"></p>
+        <p id="count">Guesses: 0</p>
+        <button id="resetButton">Game Reset Karo</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
