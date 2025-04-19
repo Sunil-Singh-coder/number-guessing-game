@@ -15,7 +15,7 @@ document.getElementById('guessForm').addEventListener('submit', function(e) {
         console.log(`Frontend: Message: ${data.message}, Count: ${data.count}`);
 
         // Add success or error class for animation
-        if (data.message.includes("Badhai ho")) {
+        if (data.message.includes("Good gob")) {
             messageElement.classList.add('success');
             messageElement.classList.remove('error');
             guessInput.disabled = true;
