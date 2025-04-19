@@ -20,11 +20,11 @@ def guess():
         count += 1
         print(f"Guess: {user_guess}, Computer number: {computer_number}, Count: {count}")
         if user_guess < computer_number:
-            message = "Tera number chhota hai!"
+            message = "Your number is greater than computer number!"
         elif user_guess > computer_number:
-            message = "Tera number bada hai!"
+            message = "Your number is less than computer number!"
         else:
-            message = f"Badhai ho! Tu {user_guess} guess kiya aur {count} attempts me jeet gaya!"
+            message = f"Good Gob! Tum {user_guess} guess kiya aur {count} attempts me jeet gaye!"
             computer_number = random.randint(1, 100)  # New number for next game
             count = 0  # Reset count after win
             print(f"Win! New computer number: {computer_number}, Count reset to: {count}")
