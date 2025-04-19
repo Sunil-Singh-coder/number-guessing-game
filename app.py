@@ -20,9 +20,9 @@ def guess():
         count += 1
         print(f"Guess: {user_guess}, Computer number: {computer_number}, Count: {count}")
         if user_guess < computer_number:
-            message = "Your number is greater than computer number!"
-        elif user_guess > computer_number:
             message = "Your number is less than computer number!"
+        elif user_guess > computer_number:
+            message = "Your number is greater than computer number!"
         else:
             message = f"Good Gob! Tum {user_guess} guess kiya aur {count} attempts me jeet gaye!"
             computer_number = random.randint(1, 100)  # New number for next game
